@@ -1,0 +1,45 @@
+--crear archivo package.json
+npm init --y
+
+--intalar express
+npm i express --save
+
+--intalar y actualizar npm
+npm install -g npm@9.1.2
+
+--instalar varias dependencias
+npm i cors dotenv multer
+cor => evitar problema de cors
+dotenv => poder manejar variables de entorno
+multer => manejar carga de archivos 
+
+--crear carpetas 
+mkdir nombre_carpeta
+
+--instalar mongo
+npm i mongoose -S  => ayuda a gestionar la conexion con mongo
+
+--ingresar a pagina mongo atlas
+https://www.mongodb.com/atlas/database
+
+--instalar nodemon para que se reinice la consola auomaticamente cuando exista un cambio en el codigo
+npm i nodmon -g    (g => para que se intale de manera global)
+
+--intalar paquete para validaciones
+npm i express-validator --save
+
+--instalar libreria para eliminacion logica
+npm i mongoose-delete -S 
+
+--===========================================================
+--instalacion WJT
+--===========================================================
+npm i jsonwebtoken -S
+--instalar bcriptjs
+npm i bcriptjs -S
+
+--instalar libreria para gestionar bases relacionales SQL
+--instalar sequelize
+npm i sequelize -S
+--instalar mysql
+npm i mysql2 -S
