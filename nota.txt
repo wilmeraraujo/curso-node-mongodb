@@ -28,6 +28,7 @@ npm i nodmon -g    (g => para que se intale de manera global)
 --intalar paquete para validaciones
 npm i express-validator --save
 
+
 --instalar libreria para eliminacion logica
 npm i mongoose-delete -S 
 

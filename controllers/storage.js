@@ -77,7 +77,7 @@ const deleteItem = async (req,res) => {
         //fs.unlinkSync(filePath);//eliminar archivo cargado 
         const data = {
             filePath,
-            deleted:1
+            deleted:1//archivo eliminado correctamente
         }
         res.send({data})    
     } catch (error) {

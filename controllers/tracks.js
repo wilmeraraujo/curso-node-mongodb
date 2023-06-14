@@ -58,7 +58,7 @@ const createItem = async (req,res) => {
 const updateItem = async (req,res) => {
     try {
         //creamos de un objeto dos objetos uno el id y otro con el restante del body {id, ...body}
-        const {id, ...body} = matchedData(req); // matchedData(req)=> limpia la data => quita los campos basura 
+        const {id, ...body} = matchedData(req); // matchedData(req)=> limpia la data => quita los campos basura  nota=  {id, ...body} => de un objeto arma dos objetos
         const data = await tracksModel.findOneAndUpdate(id,body);
         res.send({data})
     } catch (e) {
@@ -75,7 +75,7 @@ const deleteItem = async (req,res) => {
         req = matchedData(req);// matchedData(req)=> limpia la data => quita los campos basura 
         const {id} = req;
         //const data = await tracksModel.deleteOne({_id:id});//deleteOne=> se lo utiliza para realizar un borrado fisico
-        const data = await tracksModel.delete({_id:id});//delete => borrado logico
+        const data = await tracksModel.delete({_id:id});//delete => borrado logico => deleteOne= borrado fisico o total
         res.send({data});
     } catch (error) {
         handleHttpError(res,"ERROR_DELETE_ITEM")
