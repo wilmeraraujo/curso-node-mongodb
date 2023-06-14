@@ -2,11 +2,11 @@ const express = require("express");
 const fs = require("fs");
 const router = express.Router();
 
-const PATH_ROUTES = __dirname;//TODO
+const PATH_ROUTES = __dirname;//TODO direccion c:\ ...
 
 const removeExtension = (fileName) => {
     //TODO tracks.js => [tracks,js]
-    return fileName.split('.').shift()
+    return fileName.split('.').shift()//toma el primer valor es decir el nombre sin la extencion "tracks"
 }
 //const a = fs.readdirSync(PATH_ROUTES)
 fs.readdirSync(PATH_ROUTES).filter((file) =>{
